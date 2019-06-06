@@ -4,7 +4,7 @@
  * Pre-Requisites: WordPress 5 or higher running Gutenburg. ACF Pro 5.8+
  * Plugin URI: https://github.com/NHSLeadership/nhsl-wp-blocks
  * Description: Custom Blocks for Gutenburg to align with NHSL Nightingale theme
- * Version: 1.1.2
+ * Version: 1.1.3
  * Author: Tony Blacker, NHS Leadership Academy
  * Author URI: https://leadershipacademy.nhs.uk
  */
