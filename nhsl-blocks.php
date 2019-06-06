@@ -8,22 +8,18 @@
  * Author: Tony Blacker, NHS Leadership Academy
  * Author URI: https://leadershipacademy.nhs.uk
  */
-add_action('acf/init', 'my_acf_init');
-function my_acf_init() {
+add_action('acf/init', 'nhsl_acf_init');
+function nhsl_acf_init() {
     // check function exists
     if( function_exists('acf_register_block') ) {
 
-
-
-            // check function exists
-            if (function_exists('acf_register_block')) {
 
                 // register a testimonial block
                 acf_register_block(array(
                     'name'				=> 'testimonial',
                     'title'				=> __('Testimonial'),
                     'description'		=> __('A custom testimonial block.'),
-                    'render_callback'	=> 'my_acf_block_render_callback',
+                    'render_callback'	=> 'nhsl_acf_block_render_callback',
                     'category'			=> 'formatting',
                     'icon'				=> 'format-quote',
                     'keywords'			=> array( 'testimonial', 'quote' ),
@@ -33,7 +29,7 @@ function my_acf_init() {
                     'name'				=> 'information_card',
                     'title'				=> __('Information card'),
                     'description'		=> __('A solid bordered box with a call to action or important information.'),
-                    'render_callback'	=> 'my_acf_block_render_callback',
+                    'render_callback'	=> 'nhsl_acf_block_render_callback',
                     'category'			=> 'formatting',
                     'icon'				=> 'feedback',
                     'keywords'			=> array( 'card', 'info', 'information' ),
@@ -43,7 +39,7 @@ function my_acf_init() {
                     'name'				=> 'button',
                     'title'				=> __('Button'),
                     'description'		=> __('A Nightingale Styled button.'),
-                    'render_callback'	=> 'my_acf_block_render_callback',
+                    'render_callback'	=> 'nhsl_acf_block_render_callback',
                     'category'			=> 'formatting',
                     'icon'				=> 'admin-links',
                     'keywords'			=> array( 'button', 'link' ),
@@ -53,18 +49,17 @@ function my_acf_init() {
                     'name'				=> 'reveal',
                     'title'				=> __('Reveal'),
                     'description'		=> __('A Nightingale Styled reveal section.'),
-                    'render_callback'	=> 'my_acf_block_render_callback',
+                    'render_callback'	=> 'nhsl_acf_block_render_callback',
                     'category'			=> 'formatting',
                     'icon'				=> 'arrow-down-alt2',
                     'keywords'			=> array( 'reveal', 'dropdown', 'expand' ),
                 ));
-            }
         }
     }
 
 
 
-function my_acf_block_render_callback( $block ) {
+function nhsl_acf_block_render_callback( $block ) {
     // convert name ("acf/testimonial") into path friendly slug ("testimonial")
     $slug = str_replace('acf/', '', $block['name']);
     // include a template part from within the "template-parts/block" folder
