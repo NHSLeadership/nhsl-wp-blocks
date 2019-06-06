@@ -13,7 +13,7 @@ $link = get_field('call_to_action_link');
 $btn = get_field('button_text');
 ?>
 
-<div class="o-layout__item  u-<?php echo $width; ?>/12@lg" style="float: left;">
+<div class="o-layout__item  u-<?php echo $width; ?>/12@lg" >
         <div class="c-card  c-card--<?php the_field('box_type'); ?>">
             <h4><?php the_field('title'); ?></h4>
             <?php the_field('body'); ?>
