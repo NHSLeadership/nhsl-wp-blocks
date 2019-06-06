@@ -15,48 +15,58 @@ function my_acf_init()
     // check function exists
     if (function_exists('acf_register_block')) {
 
-        // register a testimonial block
-        acf_register_block(array(
-            'name' => 'testimonial',
-            'title' => __('Testimonial'),
-            'description' => __('A custom testimonial block.'),
-            'render_callback' => 'my_acf_block_render_callback',
-            'category' => 'formatting',
-            'icon' => 'format-quote',
-            'keywords' => array('testimonial', 'quote'),
-        ));
-        // register an information card
-        acf_register_block(array(
-            'name' => 'information_card',
-            'title' => __('Information card'),
-            'description' => __('A solid bordered box with a call to action or important information.'),
-            'render_callback' => 'my_acf_block_render_callback',
-            'category' => 'formatting',
-            'icon' => 'feedback',
-            'keywords' => array('card', 'info', 'information'),
-        ));
-        // register a button
-        acf_register_block(array(
-            'name' => 'button',
-            'title' => __('Button'),
-            'description' => __('A Nightingale Styled button.'),
-            'render_callback' => 'my_acf_block_render_callback',
-            'category' => 'formatting',
-            'icon' => 'admin-links',
-            'keywords' => array('button', 'link'),
-        ));
-        // register a reveal
-        acf_register_block(array(
-            'name' => 'reveal',
-            'title' => __('Reveal'),
-            'description' => __('A Nightingale Styled reveal section.'),
-            'render_callback' => 'my_acf_block_render_callback',
-            'category' => 'formatting',
-            'icon' => 'arrow-down-alt2',
-            'keywords' => array('reveal', 'dropdown'),
-        ));
+        add_action('acf/init', 'my_acf_init');
+        function my_acf_init()
+        {
+
+            // check function exists
+            if (function_exists('acf_register_block')) {
+
+                // register a testimonial block
+                acf_register_block(array(
+                    'name' => 'testimonial',
+                    'title' => __('Testimonial'),
+                    'description' => __('A custom testimonial block.'),
+                    'render_callback' => 'my_acf_block_render_callback',
+                    'category' => 'formatting',
+                    'icon' => 'format-quote',
+                    'keywords' => array('testimonial', 'quote'),
+                ));
+                // register an information card
+                acf_register_block(array(
+                    'name' => 'information_card',
+                    'title' => __('Information card'),
+                    'description' => __('A solid bordered box with a call to action or important information.'),
+                    'render_callback' => 'my_acf_block_render_callback',
+                    'category' => 'formatting',
+                    'icon' => 'feedback',
+                    'keywords' => array('card', 'info', 'information'),
+                ));
+                // register a button
+                acf_register_block(array(
+                    'name' => 'button',
+                    'title' => __('Button'),
+                    'description' => __('A Nightingale Styled button.'),
+                    'render_callback' => 'my_acf_block_render_callback',
+                    'category' => 'formatting',
+                    'icon' => 'admin-links',
+                    'keywords' => array('button', 'link'),
+                ));
+                // register a testimonial block
+                acf_register_block(array(
+                    'name' => 'reveal',
+                    'title' => __('Reveal'),
+                    'description' => __('A Nightingale styles reveal section.'),
+                    'render_callback' => 'my_acf_block_render_callback',
+                    'category' => 'formatting',
+                    'icon' => 'arrow-down-alt2',
+                    'keywords' => array('reveal', 'dropdown', 'expand'),
+                ));
+            }
+        }
     }
 }
+
 
 function my_acf_block_render_callback($block)
 {
