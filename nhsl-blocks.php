@@ -4,16 +4,14 @@
  * Pre-Requisites: WordPress 5 or higher running Gutenburg. ACF Pro 5.8+
  * Plugin URI: https://github.com/NHSLeadership/nhsl-wp-blocks
  * Description: Custom Blocks for Gutenburg to align with NHSL Nightingale theme
- * Version: 1.0
+ * Version: 1.1.2
  * Author: Tony Blacker, NHS Leadership Academy
  * Author URI: https://leadershipacademy.nhs.uk
  */
 add_action('acf/init', 'my_acf_init');
-function my_acf_init()
-{
-
+function my_acf_init() {
     // check function exists
-    if (function_exists('acf_register_block')) {
+    if( function_exists('acf_register_block') ) {
 
 
 
@@ -66,20 +64,17 @@ function my_acf_init()
 
 
 
-function my_acf_block_render_callback($block)
-{
-
+function my_acf_block_render_callback( $block ) {
     // convert name ("acf/testimonial") into path friendly slug ("testimonial")
     $slug = str_replace('acf/', '', $block['name']);
-
     // include a template part from within the "template-parts/block" folder
-    if (file_exists(plugin_dir_path(__FILE__) . "/blocks/content-{$slug}.php")) {
-        include(plugin_dir_path(__FILE__) . "/blocks/content-{$slug}.php");
+    if( file_exists(  plugin_dir_path( __FILE__ )."/blocks/content-{$slug}.php" ) )  {
+        include( plugin_dir_path( __FILE__ )."/blocks/content-{$slug}.php" );
     }
 }
 
 
-if (function_exists('acf_add_local_field_group')):
+if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
         'key' => 'group_5cf7f43cd000b',
@@ -215,7 +210,7 @@ if (function_exists('acf_add_local_field_group')):
                 'key' => 'field_5cf7ef4f39d3f',
                 'label' => 'Body',
                 'name' => 'body',
-                'type' => 'textarea',
+                'type' => 'wysiwyg',
                 'instructions' => 'Text to show within the info card',
                 'required' => 1,
                 'conditional_logic' => 0,
@@ -225,10 +220,10 @@ if (function_exists('acf_add_local_field_group')):
                     'id' => '',
                 ),
                 'default_value' => '',
-                'placeholder' => '',
-                'maxlength' => '',
-                'rows' => '',
-                'new_lines' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+                'delay' => 0,
             ),
             array(
                 'key' => 'field_5cf7ef6a39d40',
@@ -316,6 +311,87 @@ if (function_exists('acf_add_local_field_group')):
                     'param' => 'block',
                     'operator' => '==',
                     'value' => 'acf/information-card',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
+    acf_add_local_field_group(array(
+        'key' => 'group_5cf8e26ebd88b',
+        'title' => 'Reveal',
+        'fields' => array(
+            array(
+                'key' => 'field_5cf8e3333873e',
+                'label' => 'Title',
+                'name' => 'title',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_5cf8e39e3873f',
+                'label' => 'Content',
+                'name' => 'content',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_5cf8e3e338740',
+                'label' => 'Start Opened?',
+                'name' => 'open',
+                'type' => 'true_false',
+                'instructions' => 'Would you like this element to initially show as opened (tick), or closed (unticked)?',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+                'ui' => 0,
+                'ui_on_text' => '',
+                'ui_off_text' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'block',
+                    'operator' => '==',
+                    'value' => 'acf/reveal',
                 ),
             ),
         ),
@@ -448,84 +524,4 @@ if (function_exists('acf_add_local_field_group')):
         'description' => '',
     ));
 
-    acf_add_local_field_group(array(
-        'key' => 'group_5cf8ef5ad322c',
-        'title' => 'Reveal',
-        'fields' => array(
-            array(
-                'key' => 'field_5cf8ef7566b0f',
-                'label' => 'Title',
-                'name' => 'title',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_5cf8ef9b66b10',
-                'label' => 'Content',
-                'name' => 'content',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_5cf8efaf66b11',
-                'label' => 'Open',
-                'name' => 'open',
-                'type' => 'true_false',
-                'instructions' => 'Do you want the field to initially be opened (tick) or closed (untick)?',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => '',
-                'default_value' => 0,
-                'ui' => 0,
-                'ui_on_text' => '',
-                'ui_off_text' => '',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'block',
-                    'operator' => '==',
-                    'value' => 'acf/reveal',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-    ));
 endif;
