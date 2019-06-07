@@ -8,14 +8,13 @@
  * Author: Tony Blacker, NHS Leadership Academy
  * Author URI: https://leadershipacademy.nhs.uk
  */
-add_action('acf/init', 'nhsl_acf_init');
-function nhsl_acf_init() {
-    // check function exists
-    if( function_exists('acf_register_block') ) {
+
+function register_acf_block_types() {
+
 
 
                 // register a testimonial block
-                acf_register_block(array(
+                acf_register_block_type(array(
                     'name'				=> 'testimonial',
                     'title'				=> __('Testimonial'),
                     'description'		=> __('A custom testimonial block.'),
@@ -25,7 +24,7 @@ function nhsl_acf_init() {
                     'keywords'			=> array( 'testimonial', 'quote' ),
                 ));
                 // register an information card
-                acf_register_block(array(
+                acf_register_block_type(array(
                     'name'				=> 'information_card',
                     'title'				=> __('Information card'),
                     'description'		=> __('A solid bordered box with a call to action or important information.'),
@@ -35,7 +34,7 @@ function nhsl_acf_init() {
                     'keywords'			=> array( 'card', 'info', 'information' ),
                 ));
                 // register a button
-                acf_register_block(array(
+                acf_register_block_type(array(
                     'name'				=> 'button',
                     'title'				=> __('Button'),
                     'description'		=> __('A Nightingale Styled button.'),
@@ -45,7 +44,7 @@ function nhsl_acf_init() {
                     'keywords'			=> array( 'button', 'link' ),
                 ));
                 // register a reveal block
-                acf_register_block(array(
+                acf_register_block_type(array(
                     'name'				=> 'reveal',
                     'title'				=> __('Reveal'),
                     'description'		=> __('A Nightingale Styled reveal section.'),
@@ -54,10 +53,13 @@ function nhsl_acf_init() {
                     'icon'				=> 'arrow-down-alt2',
                     'keywords'			=> array( 'reveal', 'dropdown', 'expand' ),
                 ));
-        }
+
     }
 
-
+// Check if function exists and hook into setup.
+if( function_exists('acf_register_block_type') ) {
+    add_action('acf/init', 'register_acf_block_types');
+}
 
 function nhsl_acf_block_render_callback( $block ) {
     // convert name ("acf/testimonial") into path friendly slug ("testimonial")
