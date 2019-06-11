@@ -1,6 +1,6 @@
-#NHS Blocks for Gutenburg
+# NHS Blocks for Gutenburg
 
-###Alpha release - this code is still in active development
+### Alpha release - this code is still in active development
 This is a WordPress plugin to extend the NHS Frontend library in to the Gutenburg editor. It adds blocks to the 
 editor which then display in correct markup for the NHS template to render.
 
@@ -12,7 +12,7 @@ Dependancies:
 not, the editor will not have any way of connecting to the code. It wont work. Don't use ACF standard, it wont work. 
 Seriously, it needs the Pro version.
 
-##Included blocks:
+## Included blocks:
  - Information card
    - Standard [non urgent care card - blue top](https://beta.nhs.uk/service-manual/styles-components-patterns/care-cards#non-urgent-care-card-blue)
    - Highlight [urgent care card - red top](https://beta.nhs.uk/service-manual/styles-components-patterns/care-cards#urgent-care-card-red)
@@ -41,7 +41,7 @@ Seriously, it needs the Pro version.
    - Hero with only text
    - Hero with both image and text
    
- ##Installation
+ ## Installation
  
  - -**Ensure you first have ACF Pro installed and activated.**
  - It also makes sense to have the [NHS Nightingale 2.0 Theme](https://github.com/NHSLeadership/nightingale-2-0) 
@@ -57,7 +57,7 @@ Seriously, it needs the Pro version.
  upload an image on pages you wish to have a hero banner showing. **The Hero Banner will not show without code in 
  your theme. Nightingale 2.0 already includes this code**
  
- ##Progress
+ ## Progress
   - [x] Add core components
   - [x] Add flexibility to each component to scale it out
   - [x] Add Hero to Page edit screen
