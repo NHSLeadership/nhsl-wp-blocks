@@ -23,23 +23,23 @@ Seriously, it needs the Pro version.
  include inverted box option
  - [Reveal](https://beta.nhs.uk/service-manual/styles-components-patterns/details)
  - [Call Out Box](https://nhsuk.github.io/nhsuk-frontend/components/promo/index.html)
-   - Promo with no description
-   - Promo with image
+   - [Promo with no description](https://nhsuk.github.io/nhsuk-frontend/components/promo/promo-no-description.html)
+   - [Promo with image](https://nhsuk.github.io/nhsuk-frontend/components/promo/promo-with-image.html)
  - [Call Out Box Group](https://nhsuk.github.io/nhsuk-frontend/components/promo/promo-group.html)
    - as individual call out box, but grouped with ability to add multiple boxes in a layout of your choice.
  - [Panel Element](https://nhsuk.github.io/nhsuk-frontend/components/panel/index.html)
-   - Panel with grey background
-   - Panel with label
+   - [Panel with grey background](https://nhsuk.github.io/nhsuk-frontend/components/panel/panel-grey.html)
+   - [Panel with label](https://nhsuk.github.io/nhsuk-frontend/components/panel/panel-with-label.html)
    - Added action button
  - [Panel Element Group](https://nhsuk.github.io/nhsuk-frontend/components/panel/panel-group.html)
  - [Button](https://nhsuk.github.io/nhsuk-frontend/components/button/index.html)
    - Action button - Green
-   - Secondary Button - Grey
-   - Reverse Button - White
+   - [Secondary Button - Grey](https://nhsuk.github.io/nhsuk-frontend/components/button/secondary.html)
+   - [Reverse Button - White](https://nhsuk.github.io/nhsuk-frontend/components/button/reverse.html)
  - [Hero](https://nhsuk.github.io/nhsuk-frontend/components/hero/index.html)
-   - Hero with only image
+   - [Hero with only image](https://nhsuk.github.io/nhsuk-frontend/components/hero/hero-image.html)
    - Hero with only text
-   - Hero with both image and text
+   - [Hero with both image and text](https://nhsuk.github.io/nhsuk-frontend/components/hero/hero-image-content.html)
    
  ## Installation
  
