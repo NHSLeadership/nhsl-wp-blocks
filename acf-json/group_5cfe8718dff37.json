@@ -1,0 +1,148 @@
+{
+    "key": "group_5cfe8718dff37",
+    "title": "Panel Group",
+    "fields": [
+        {
+            "key": "field_5cfe872c65afa",
+            "label": "Panels",
+            "name": "panels",
+            "type": "repeater",
+            "instructions": "Add your individual Panels below, you will need to click \"Add a Panel\" for each additional panel. Please pay particular attention to the sizes - i.e. put two elements of one-half next to each other or three of one-third to ensure the layout adds up to a full width on each row)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5cfe883465afc",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add a Panel",
+            "sub_fields": [
+                {
+                    "key": "field_5cfe87ca65afb",
+                    "label": "Size",
+                    "name": "size",
+                    "type": "radio",
+                    "instructions": "What width would you like this panel to be displayed? (try to group elements that add up to full width)",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "full-width": "Full Width",
+                        "one-half": "Half Width",
+                        "two-thirds": "Two Third Width",
+                        "one-third": "One Third Width",
+                        "one-quarter": "Quarter Width"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "one-half",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5cfe883465afc",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "The title of this panel",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5cfe884b65afd",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "The content for this panel",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_5cfe886765afe",
+                    "label": "White Box?",
+                    "name": "white_box",
+                    "type": "true_false",
+                    "instructions": "Would you like this panel to have a white background (N.B. If you choose to show with a Label, the box will revert to white)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5cfe889965aff",
+                    "label": "Highlighted Label?",
+                    "name": "label",
+                    "type": "true_false",
+                    "instructions": "Do you wish to highlight the label for this panel? (Setting this to true will revert the box to a white background)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/panel-group"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1560198003
+}

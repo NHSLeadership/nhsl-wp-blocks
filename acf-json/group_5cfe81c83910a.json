@@ -1,0 +1,126 @@
+{
+    "key": "group_5cfe81c83910a",
+    "title": "Panel",
+    "fields": [
+        {
+            "key": "field_5cfe81e6fbbb7",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "The title to be shown on this panel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cfe81f9fbbb8",
+            "label": "Content",
+            "name": "content",
+            "type": "wysiwyg",
+            "instructions": "The main content for this panel",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5cfe824bfbbb9",
+            "label": "Highlight the Title as a Label",
+            "name": "label",
+            "type": "true_false",
+            "instructions": "Would you like the title to show inside the box as standard, or as a highlighted element above the box. (N.B. Highlighted titles do not work well with long titles - two to three words maximum)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cfe83a0fbbba",
+            "label": "Highlight?",
+            "name": "white_box",
+            "type": "true_false",
+            "instructions": "If set to true, this box will have a white background. If not, the box will have a grey background. (N.B. The box defaults to a white background if you have selected to show a label above)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cfe8538fbbbb",
+            "label": "Size",
+            "name": "size",
+            "type": "radio",
+            "instructions": "What size would you like the panel to show as?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full-width": "Full Width",
+                "one-half": "Half Width",
+                "two-thirds": "Two Thirds Width",
+                "one-third": "One Third Width"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "full-width",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/panel"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1560184212
+}
