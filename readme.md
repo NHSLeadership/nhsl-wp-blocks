@@ -14,12 +14,9 @@ Seriously, it needs the Pro version.
 
 ##Included blocks:
  - Information card
-   - Standard [non urgent care card - blue top](https://beta.nhs
-   .uk/service-manual/styles-components-patterns/care-cards#non-urgent-care-card-blue)
-   - Highlight [urgent care card - red top](https://beta.nhs
-   .uk/service-manual/styles-components-patterns/care-cards#urgent-care-card-red)
-   - Immediate ( [immediate care card - red top, dark grey panel](https://beta.nhs
-                                                                    .uk/service-manual/styles-components-patterns/care-cards#emergency-care-card-red-and-black)):  
+   - Standard [non urgent care card - blue top](https://beta.nhs.uk/service-manual/styles-components-patterns/care-cards#non-urgent-care-card-blue)
+   - Highlight [urgent care card - red top](https://beta.nhs.uk/service-manual/styles-components-patterns/care-cards#urgent-care-card-red)
+   - Immediate ( [immediate care card - red top, dark grey panel](https://beta.nhs.uk/service-manual/styles-components-patterns/care-cards#emergency-care-card-red-and-black)):  
 
  - (Do and Dont List.)[https://beta.nhs.uk/service-manual/styles-components-patterns/do-and-dont-list] Able to make a list of either do with tick, or dont with cross.
  - (Testimonials / Quotes)[https://beta.nhs.uk/service-manual/styles-components-patterns/inset-text] - expanded to 
