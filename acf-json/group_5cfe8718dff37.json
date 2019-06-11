@@ -7,7 +7,7 @@
             "label": "Panels",
             "name": "panels",
             "type": "repeater",
-            "instructions": "Add your individual Panels below, you will need to click \"Add a Panel\" for each additional panel. Please pay particular attention to the sizes - i.e. put two elements of one-half next to each other or three of one-third to ensure the layout adds up to a full width on each row)",
+            "instructions": "Add your individual Panels below, you will need to click \"Add a Panel\" for each additional panel. Please pay particular attention to the sizes - i.e. put two elements of one-half next to each other or three of one-third to ensure the layout adds up to a full width on each row",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -144,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560198003
+    "modified": 1560264612
 }

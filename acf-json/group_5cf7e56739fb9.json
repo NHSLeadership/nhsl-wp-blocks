@@ -1,0 +1,119 @@
+{
+    "key": "group_5cf7e56739fb9",
+    "title": "Testimonial",
+    "fields": [
+        {
+            "key": "field_5cf7e5b94e616",
+            "label": "Invert?",
+            "name": "invert",
+            "type": "true_false",
+            "instructions": "If false, the quote will be normal text on white background. If true, this will be a blue highlighted box with white text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cf7e5e44e617",
+            "label": "Quote",
+            "name": "quote",
+            "type": "textarea",
+            "instructions": "Full snippet of quoted text",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5cf7e5ff4e618",
+            "label": "Name",
+            "name": "name",
+            "type": "text",
+            "instructions": "Name of author \/ person to whom quote is attributed",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cf7e6154e619",
+            "label": "Role",
+            "name": "role",
+            "type": "text",
+            "instructions": "Job Title or Role of person being quoted",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cf7e62a4e61a",
+            "label": "Organisation",
+            "name": "organisation",
+            "type": "text",
+            "instructions": "Organisation person being quoted belongs to",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1560265478
+}

@@ -7,7 +7,7 @@
             "label": "Promos",
             "name": "promos",
             "type": "repeater",
-            "instructions": "A group of promo boxes.",
+            "instructions": "A group of promotional boxes.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -144,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560197600
+    "modified": 1560264754
 }
