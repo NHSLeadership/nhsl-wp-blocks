@@ -19,7 +19,7 @@ if ($image = get_field('image')) {
     $hero_arrow = '';
 }
 $title = get_field('title');
-$content = get_field('title');
+$content = get_field('content');
 if ((!empty($title)) || (!empty($content))) {
     $flag = 1;
     $widthstyle = ' nhsuk-hero--border';
