@@ -105,6 +105,17 @@ function register_acf_block_types()
         'keywords' => array( 'panels', 'elements', 'group'),
     ));
 
+    // register a dashboard group
+    acf_register_block_type(array(
+        'name' => 'dashboard-group',
+        'title' => __('Dashboard Links'),
+        'description' => __('An NHS Styled group of dashboard links with images.'),
+        'render_callback' => 'nhsl_acf_block_render_callback',
+        'category' => 'nhs-elements',
+        'icon' => 'forms',
+        'keywords' => array('dashboard', 'links', 'panel', 'homepage', 'navigation'),
+    ));
+
 }
 
 // Check if function exists and hook into setup.

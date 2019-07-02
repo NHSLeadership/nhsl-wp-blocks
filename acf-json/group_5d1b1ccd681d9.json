@@ -1,0 +1,130 @@
+{
+    "key": "group_5d1b1ccd681d9",
+    "title": "Dashboard Group",
+    "fields": [
+        {
+            "key": "field_5d1b1ccd8c31f",
+            "label": "Panels",
+            "name": "panels",
+            "type": "repeater",
+            "instructions": "Add your individual Panels below, you will need to click \"Add a Panel\" for each additional panel. Please pay particular attention to the sizes - i.e. put two elements of one-half next to each other or three of one-third to ensure the layout adds up to a full width on each row",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5cfe883465afc",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add a Panel",
+            "sub_fields": [
+                {
+                    "key": "field_5d1b1ccd97c19",
+                    "label": "Size",
+                    "name": "size",
+                    "type": "radio",
+                    "instructions": "What width would you like this panel to be displayed? (try to group elements that add up to full width)",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "full-width": "Full Width",
+                        "one-half": "Half Width",
+                        "two-thirds": "Two Third Width",
+                        "one-third": "One Third Width",
+                        "one-quarter": "Quarter Width"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "one-half",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5d1b1ccd97ca3",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "The title of this panel",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5d1b1d6a5d286",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5d1b1d8e5d287",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/dashboard-group"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1562058559
+}
