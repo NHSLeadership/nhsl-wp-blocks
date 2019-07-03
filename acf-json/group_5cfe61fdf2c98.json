@@ -95,7 +95,6 @@
             "choices": {
                 "full-width": "Full Width",
                 "one-half": "Half Width",
-                "one-quarter": "One Quarter Width",
                 "two-thirds": "Two Thirds Width",
                 "one-third": "One Third Width"
             },
@@ -124,5 +123,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560264687
+    "modified": 1562153320
 }
