@@ -35,7 +35,7 @@
                         "id": ""
                     },
                     "choices": {
-                        "full-width": "Full Width",
+                        "full": "Full Width",
                         "one-half": "Half Width",
                         "two-thirds": "Two Third Width",
                         "one-third": "One Third Width"
