@@ -92,14 +92,14 @@
                 "id": ""
             },
             "choices": {
-                "full-width": "Full Width",
+                "full": "Full Width",
                 "one-half": "Half Width",
                 "two-thirds": "Two Thirds Width",
                 "one-third": "One Third Width"
             },
             "allow_null": 0,
             "other_choice": 0,
-            "default_value": "full-width",
+            "default_value": "full",
             "layout": "vertical",
             "return_format": "value",
             "save_other_choice": 0

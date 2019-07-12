@@ -35,7 +35,7 @@
                         "id": ""
                     },
                     "choices": {
-                        "full-width": "Full Width",
+                        "full": "Full Width",
                         "one-half": "Half Width",
                         "two-thirds": "Two Third Width",
                         "one-third": "One Third Width"
@@ -72,6 +72,7 @@
                     "name": "link",
                     "type": "link",
                     "instructions": "",
+                    "default_value": "",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -87,6 +88,7 @@
                     "name": "image",
                     "type": "image",
                     "instructions": "",
+                    "default_value": "",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {

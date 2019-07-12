@@ -27,6 +27,7 @@
             "name": "link",
             "type": "link",
             "instructions": "",
+            "default_value": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {

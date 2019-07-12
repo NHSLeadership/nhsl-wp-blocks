@@ -73,6 +73,7 @@
                         "id": ""
                     },
                     "return_format": "array",
+                    "default_value": "",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -97,7 +98,7 @@
                         "id": ""
                     },
                     "choices": {
-                        "full-width": "Full Width",
+                        "full": "Full Width",
                         "one-half": "Half Width",
                         "two-thirds": "Two Thirds Width",
                         "one-third": "One Third Width"
@@ -116,6 +117,7 @@
                     "type": "link",
                     "instructions": "",
                     "required": 0,
+                    "default_value": "",
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",

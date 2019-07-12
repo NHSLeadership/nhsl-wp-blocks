@@ -48,6 +48,8 @@ if ((!empty($image)) || ($flag > 0)) {
         <?php echo $overlay[1]; ?>
     </section><p></p>
     <?php
+} else {
+    nightingale_breadcrumb();
 }
 ?>
 

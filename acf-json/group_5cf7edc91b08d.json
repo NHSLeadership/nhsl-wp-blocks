@@ -63,6 +63,7 @@
             "key": "field_5cf7ef8b39d41",
             "label": "Call to action link",
             "name": "call_to_action_link",
+            "default_value": "",
             "type": "link",
             "instructions": "The link where you wish the user to go when they click the call to action button",
             "required": 0,
@@ -88,14 +89,14 @@
                 "id": ""
             },
             "choices": {
-                "full-width": "Full",
+                "full": "Full",
                 "one-half": "Half",
                 "two-thirds": "Two-Thirds",
                 "one-third": "One-Third"
             },
             "allow_null": 0,
             "other_choice": 0,
-            "default_value": "full-width",
+            "default_value": "full",
             "layout": "vertical",
             "return_format": "value",
             "save_other_choice": 0
