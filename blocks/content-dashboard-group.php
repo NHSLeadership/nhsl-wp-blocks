@@ -26,15 +26,16 @@ if (have_rows('panels')):
         if (!empty($imageone)) {
             $imgurl = $imageone['url'];
             $imgalt = $imageone['alt'];
-            $img = '<img class="nhsuk-promo__img" src="' . $imgurl . '" alt="' . $imgalt . '">';
+            $img = ' style="background-image: url(' . $imgurl . ');"';
         }
         ?>
         <div class="nhsuk-grid-column-<?php echo $size; ?> nhsuk-panel-group__item">
             <?php echo $starta; ?>
 
-            <div class="<?php echo $class; ?>">
+            <div class="<?php echo $class; ?>" <?php echo $img; ?>>
                 <h3 class="<?php echo $label; ?>"><?php echo the_sub_field('title'); ?></h3>
-                <?php echo $img; ?>
+                <?php // echo $img; ?>
+                <img src="wp-content/themes/nightingale-2-0/assets/pixel_trans.png" width="100%" height="100%" />
             </div>
             <?php echo $enda; ?>
         </div>
