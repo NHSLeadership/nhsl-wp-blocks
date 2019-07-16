@@ -5,7 +5,8 @@
  * Simple panel element to display generic content in a mildly highlighted manner.
  */
 if (have_rows('panels')):
-    echo '<div class="nhsuk-grid-row nhsuk-panel-group nhsuk-dashboard">';
+    echo '<div class="nhsuk-grid-row">
+            <div class="nhsuk-panel-group nhsuk-dashboard">';
     while (have_rows('panels')) : the_row();
 
         $label = 'nhsuk-panel-with-label__label';
@@ -42,7 +43,7 @@ if (have_rows('panels')):
 
     <?php
     endwhile;
-    echo '</div>';
+    echo '</div></div>';
 else :
 
     // no rows found

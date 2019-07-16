@@ -1,0 +1,69 @@
+{
+    "key": "group_5d2db4bb06f20",
+    "title": "Latest News",
+    "fields": [
+        {
+            "key": "field_5d2dbdfb817ba",
+            "label": "columns",
+            "name": "columns",
+            "type": "radio",
+            "instructions": "Would you like 2 columns per row or 3?",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2": "2",
+                "3": "3"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": 3,
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5d2dbe31817bb",
+            "label": "Posts to Show",
+            "name": "posts",
+            "type": "number",
+            "instructions": "How many posts would you like to show int his section?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 6,
+            "placeholder": 6,
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1563280418
+}

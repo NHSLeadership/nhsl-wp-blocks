@@ -116,6 +116,17 @@ function register_acf_block_types()
         'keywords' => array('dashboard', 'links', 'panel', 'homepage', 'navigation'),
     ));
 
+    // register a dashboard group
+    acf_register_block_type(array(
+        'name' => 'nhs-latest-posts',
+        'title' => __('NHS Latest News'),
+        'description' => __('An NHS Styled group of latest posts with images.'),
+        'render_callback' => 'nhsl_acf_block_render_callback',
+        'category' => 'nhs-elements',
+        'icon' => 'megaphone',
+        'keywords' => array('dashboard', 'news', 'posts', 'homepage', 'list'),
+    ));
+
 }
 
 // Check if function exists and hook into setup.
