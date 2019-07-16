@@ -14,8 +14,7 @@ $btn = get_field('button_text');
 ?>
 
 
-<div class="nhsuk-grid-column-<?php echo $width; ?>">
-<div class="nhsuk-care-card nhsuk-care-card--<?php the_field('box_type'); ?>">
+<div class="nhsuk-grid-column-<?php echo $width; ?> nhsuk-care-card nhsuk-care-card--<?php the_field('box_type'); ?>">
     <div class="nhsuk-care-card__heading-container">
         <h3 class="nhsuk-care-card__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span><?php the_field('title'); ?></span></h3>
         <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
@@ -28,5 +27,4 @@ $btn = get_field('button_text');
         <? } ?>
 
     </div>
-</div>
 </div>
