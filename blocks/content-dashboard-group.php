@@ -16,7 +16,6 @@ if (have_rows('panels')):
         $link = get_sub_field('link');
         if (!empty($link)) {
             $url = $link['url'];
-            //$link_target = $link['target'] ? $link['target'] : '_self';
             $starta = '<a class="nhsuk-promo__link-wrapper" href="' . $url . '">';
             $enda = '</a>';
         } else {
@@ -26,7 +25,6 @@ if (have_rows('panels')):
         $imageone = get_sub_field('image');
         if (!empty($imageone)) {
             $imgurl = $imageone['url'];
-            $imgalt = $imageone['alt'];
             $img = ' style="background-image: url(' . $imgurl . ');"';
         }
         ?>
@@ -35,8 +33,7 @@ if (have_rows('panels')):
 
             <div class="<?php echo $class; ?>" <?php echo $img; ?>>
                 <h3 class="<?php echo $label; ?>"><?php echo the_sub_field('title'); ?></h3>
-                <?php // echo $img; ?>
-                <img src="wp-content/themes/nightingale-2-0/assets/pixel_trans.png" width="100%" height="100%" />
+                <img src="/wp-content/themes/nightingale-2-0/assets/pixel_trans.png" width="100%" height="100%" />
             </div>
             <?php echo $enda; ?>
         </div>
