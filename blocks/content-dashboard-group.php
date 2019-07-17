@@ -25,6 +25,7 @@ if (have_rows('panels')):
         $imageone = get_sub_field('image');
         if (!empty($imageone)) {
             $imgurl = $imageone['url'];
+            $alt = $imageone['alt'];
             $img = ' style="background-image: url(' . $imgurl . ');"';
         }
         ?>
@@ -33,7 +34,7 @@ if (have_rows('panels')):
 
             <div class="<?php echo $class; ?>" <?php echo $img; ?>>
                 <h3 class="<?php echo $label; ?>"><?php echo the_sub_field('title'); ?></h3>
-                <img src="/wp-content/themes/nightingale-2-0/assets/pixel_trans.png" width="100%" height="100%" />
+                <img src="/wp-content/themes/nightingale-2-0/assets/pixel_trans.png" class="nhsuk-dashboard__image" alt="<?php echo $alt; ?>" />
             </div>
             <?php echo $enda; ?>
         </div>
