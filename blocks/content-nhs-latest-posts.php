@@ -15,20 +15,22 @@ if ($columns == 2) {
 $args = array(
     'posts_per_page'   => $total,
     'post_status'      => 'publish',
-    'order'            => $attributes['order'],
-    'orderby'          => $attributes['orderBy'],
+//    'order'            => $attributes['order'],
+//    'orderby'          => $attributes['orderBy'],
     'suppress_filters' => false,
 );
-
+/*
+ * removing for the moment as not defined in block. @todo
 if ( isset( $attributes['categories'] ) ) {
     $args['category'] = $attributes['categories'];
 }
+*/
 
 $recent_posts = wp_get_recent_posts( $args );
 
 
 
-echo '<div class="nhsuk-grid-row">
+$list_items_markup = '<div class="nhsuk-grid-row">
 
           <div class="nhsuk-panel-group">';
 $i = 0;
@@ -68,9 +70,9 @@ foreach ( $recent_posts as $post ) {
         $i = 0;
     }
 }
-
+$list_items_markup .= '</div></div>';
 echo $list_items_markup;
-echo '</div></div>';
+
 
 function pretext($text, $link){
     return '<div class="nhsuk-action-link">
