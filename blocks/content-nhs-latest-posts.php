@@ -46,7 +46,7 @@ foreach ( $recent_posts as $post ) {
     $text = get_post( $post_id );
     $text = $text->post_content;
 
-    $text = wp_trim_words( $text, 25, pretext('read&nbsp;more', $post_url) );
+    $text = wp_trim_words( $text, 25, '' );
     $excerpt = $text;
 
     $list_items_markup .= sprintf(
@@ -60,7 +60,7 @@ foreach ( $recent_posts as $post ) {
         $excerpt
     );
 
-    $list_items_markup .= "</div>
+    $list_items_markup .= pretext('read&nbsp;more', $post_url) . "</div>
 
             </div>";
     if ($i == $columns) {
