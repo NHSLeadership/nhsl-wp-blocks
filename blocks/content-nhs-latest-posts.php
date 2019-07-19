@@ -19,17 +19,21 @@ $args = array(
     'order'            => 'DESC',
     'orderby'          => 'date',
 );
-
+/*
+ * removing for the moment as not defined in block. @todo
 if ( isset( $attributes['categories'] ) ) {
     $category = $attributes['categories'];
 } else {
     $category = '';
 }
+*/
+
 
 
 // the query
 $the_query = new WP_Query( $args);
 echo '<div class="nhsuk-grid-row">
+
 
           <div class="nhsuk-panel-group">';
     $i = 1;
